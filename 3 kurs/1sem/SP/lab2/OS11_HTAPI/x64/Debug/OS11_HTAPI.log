@@ -1,0 +1,5 @@
+﻿D:\Other\Visual Studio\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(520,5): warning MSB8003: свойство WindowsSDKDir не определено. Возможно, не найдены некоторые средства сборки.
+  pch.cpp
+D:\5sem\sp\lab2\OS11_HTAPI\pch.h(12,10): error C1083: Не удается открыть файл включение: Windows.h: No such file or directory,
+  (компиляция исходного файла "pch.cpp")
+  

@@ -61,3 +61,12 @@ pip-delete-this-directory.txt
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Исполняемые файлы и библиотеки
+*.exe
+*.dll
+*.lib
+*.out
+*.app
+
+*.zip
