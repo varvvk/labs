@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 2</title>
+    <link rel="stylesheet" href="css2.css">
+</head>
+<body>
+    <script>
+        let table = document.createElement('table');
+        let a = prompt('Введите a: ');
+        let b = prompt('Введите b: ');
+        for (let i = 0; i <= a; i++) 
+        {
+	        tr = table.appendChild(document.createElement('tr'));
+            for (j = 0; j <= b; j++)
+            {
+                td = tr.appendChild(document.createElement('td'));
+                if(i==0)
+                td.append(j);
+                 else if (j==0)
+                 td.append(i);
+                else
+                td.append(i*j);
+            }
+        document.body.append(table);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+# =========================
+# Node.js
+# =========================
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# =========================
+# C# / .NET
+# =========================
+bin/
+obj/
+.vs/
+*.user
+*.suo
+TestResults/
+
+# =========================
+# Unity
+# =========================
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+sysinfo.txt
+*.apk
+*.unitypackage
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+
+# =========================
+# Системные файлы (Windows/Mac)
+# =========================
+Thumbs.db
+desktop.ini
+.DS_Store

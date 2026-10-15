@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="style2.xsl"?>
+<students>
+  <student>
+    <name>Казакова Варвара</name>
+    <mark>3</mark>
+  </student>
+  <student>
+    <name>Старовойтова Ева</name>
+    <mark>10</mark>
+  </student>
+  <student>
+    <name>Дужик Ульяна</name>
+    <mark>7</mark>
+  </student>
+</students>

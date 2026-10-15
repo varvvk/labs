@@ -1,0 +1,113 @@
+@keyframes first{
+    0% {
+        transform: rotateY(60deg);
+        perspective: 2000px;
+        perspective-origin: center top;
+        left: 0px;
+    }
+    50% {
+        transform: rotateY(0deg);
+        perspective: none;
+        animation-delay: 1s;
+        left: 120px;
+    }
+    100% {
+        transform: rotateY(0deg);
+        perspective: none;
+        left: 150px;
+    }
+} 
+.one {
+    position: absolute;
+    animation: first 6s;
+}
+@keyframes second{
+    0% {
+        transform: rotateY(60deg);
+        perspective: 2000px;
+        perspective-origin: center top;
+        left: 40px;
+    }
+    50%{
+        transform: rotateY(0deg);
+        perspective: none;
+        animation-delay: 1s;
+        left: 160px;
+        filter: none;
+    }
+    100% {
+        transform: rotateY(0deg);
+        perspective: none;
+        left: 470px;
+        filter: blur(10px);
+    }
+}
+.two {
+    position: absolute;
+    animation: second 6s;
+}
+@keyframes third{
+    0% {
+        transform: rotateY(60deg);
+        perspective: 2000px;
+        perspective-origin: center top;
+        left: 80px;
+    }
+    50%{
+        transform: rotateY(0deg);
+        perspective: none;
+        animation-delay: 1s;
+        left: 200px;
+        filter: none;
+        }
+    100% {
+        transform: rotateY(0deg);
+        perspective: none;
+        left: 790px;
+        filter: grayscale(1);
+    }
+}
+.three {
+    position: absolute;
+    animation: third 6s;
+}
+@keyframes fourth{
+    0% {
+        transform: rotateY(60deg);
+        perspective: 2000px;
+        perspective-origin: center top;
+        left: 120px;
+    }
+    50%{
+        transform: rotateY(0deg);
+        perspective: none;
+        animation-delay: 1s;
+        left: 240px;
+        filter: none;
+        }
+    100% {
+        transform: rotateY(0deg);
+        perspective: none;
+        left: 1110px;
+        filter: invert(1);
+    }
+}
+.four {
+    position: absolute;
+    animation: fourth 6s;
+}
+h1 {
+    text-align: center;
+    animation: h1 4s linear infinite reverse;
+}
+@keyframes h1 {
+    0% {
+    opacity: 0;
+    }
+    50% {
+    opacity: 0.8;
+    }
+    100% {
+    opacity: 0;
+    }
+}

@@ -1,0 +1,38 @@
+ul li{
+    list-style-type: none;
+    background-image: url('images/list.png');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 16px 16px;
+}
+body {
+    background-image: url('images/logo.jpg');
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: right top;
+    background-attachment: fixed;
+}
+.first {
+    background-image: url('images/Буддлея.jpg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-left: 15px;
+    height: 360px;
+}
+.second {
+    background-image: url('images/Вейгела.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-right: 20px;
+    height: 319px;
+}
+.firText {
+    float: right;
+    margin: 0px 100px 0px 340px;
+    text-indent: 10px;
+}
+.secText {
+    float: left;
+    margin: 0px 340px 0px 100px;
+    text-indent: 10px;
+}

@@ -1,0 +1,11 @@
+.grid {
+    display: grid;
+    grid-template-columns: 30px 250px 250px;
+    column-gap: 20px;
+}
+.grid div {
+    border: 1px solid black;
+    height: 500px;
+    text-align: center;
+    font-size: 35px;
+}

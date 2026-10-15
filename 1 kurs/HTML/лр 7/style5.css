@@ -1,0 +1,82 @@
+img{
+    opacity: 1;
+    position: absolute;
+}
+.one{
+    animation: anim1 5s linear infinite;
+    z-index: 5;
+}
+.two{
+    animation: anim2 5s linear infinite;
+    z-index: 4;
+}
+.three{
+    animation: anim3 5s linear infinite;
+    z-index: 3;
+}
+.four{
+    animation: anim4 5s linear infinite;
+    z-index: 2;
+}
+.five{
+    z-index: 1;
+}
+@keyframes anim1{
+    19%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes anim2{
+    39%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes anim3{
+    59%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes anim4{
+    79%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+h1 {
+    text-align: center;
+    animation: h1 4s linear infinite reverse;
+}
+@keyframes h1 {
+    0% {
+    opacity: 0;
+    }
+    50% {
+    opacity: 0.8;
+    }
+    100% {
+    opacity: 0;
+    }
+}

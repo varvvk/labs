@@ -1,0 +1,32 @@
+div{
+    perspective: 2000px;
+    perspective-origin: center top;
+}
+.one {
+    transform: rotateX(60deg);
+    margin-left: 70px;
+}
+.two {
+    transform: rotateY(50deg);
+}
+.three {
+    transform: rotateX(60deg);
+}
+.four {
+    transform: rotateY(-50deg);
+}
+h1 {
+    text-align: center;
+    animation: h1 4s linear infinite reverse;
+}
+@keyframes h1 {
+    0% {
+    opacity: 0;
+    }
+    50% {
+    opacity: 0.8;
+    }
+    100% {
+    opacity: 0;
+    }
+}

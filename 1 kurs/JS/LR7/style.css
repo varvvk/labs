@@ -1,0 +1,21 @@
+textarea {
+    max-width: 300px;
+	max-height: 100px;
+    margin-bottom: 15px;
+}
+legend {
+    font-weight: bold;
+}
+label {
+    font-weight: bold;
+}
+.spec {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.predm {
+    margin-bottom: 15px;
+}
+.pech {
+    margin-top: 10px;
+}

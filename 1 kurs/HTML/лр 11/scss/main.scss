@@ -1,0 +1,99 @@
+@import 'value.scss';
+@mixin form-element-hover {
+    &:hover {
+      background-color: #230000;
+    }
+}
+@function sizes($sz){
+    @if($sz >= 30px){
+        @return $sz + 10px;
+    }
+    @else{
+        @return $sz - 6px;
+    }
+}
+@function textsize($h1size) {
+    $textsize: $h1size/1.2;
+    @return $textsize;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+        list-style: $n;
+    }
+    li {
+        display: inline;
+        padding: 90px;
+    }
+    a {text-decoration: none;}
+}
+
+h1, h2 {
+    font-size: sizes(30px);
+    text-align: center;
+    margin-top: 0;
+}
+
+.center_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    main {
+        width: 60%;
+    }
+    .mainTextCont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            width: 220px;
+            height: 350px;
+        }
+        .text1 {
+            color: #9a2b00;
+            font-size: textsize(20px);
+        }
+        .text2 {
+            @extend .text1;
+        }
+    }
+    .mainPicCont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            margin: 5px;
+        }
+        div {
+            height: 350px;
+        }
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 200px 360px;
+}
+
+.input1 {
+    @include form-element-hover();
+}
+
+.div_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $c;
+    font-size: 14px;
+    max-height: 100vh;
+    margin-top: 40px;
+    .footer_number, .footer_email {
+        text-decoration: $n;
+        color: $c;
+    }
+}

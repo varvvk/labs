@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="forma">
+        <div><textarea name="faculty" cols="30" rows="10" placeholder="Факультет информационных технологий"></textarea></div>
+        <div><input type="text" placeholder="Фамилия" name="lastName"></div>
+        <div><input type="text" placeholder="Имя"></div>
+        <div class="spec">
+            <legend>Специальность
+            <select name="specialty">
+            <option value="ИСиТ">ИСиТ</option>
+            <option value="ПОИТ">ПОИТ</option>
+            <option value="ПОИБМС">ПОИБМС</option>
+            <option value="ДЭВИ">ДЭВИ</option>
+            </select></legend>
+        </div>
+        <div>
+        <legend>Курс</legend>
+        <input type="radio" name="kurs" value="1" id="1"><label for="1">1</label>
+        <input type="radio" name="kurs" value="2" id="2"><label for="2">2</label>
+        <input type="radio" name="kurs" value="3" id="3"><label for="3">3</label>
+        <input type="radio" name="kurs" value="4" id="4"><label for="4">4</label>
+        </div>
+        <div class="predm">
+        <legend>Предметы</legend>
+        <input type="checkbox" name="predmet" value="ВРПО" id="ВРПО"><label for="ВРПО">ВРПО</label>
+        <input type="checkbox" name="predmet" value="ОАИП" id="ОАИП"><label for="ОАИП">ОАИП</label>
+        <input type="checkbox" name="predmet" value="СЯП" id="СЯП"><label for="СЯП">СЯП</label>
+        <input type="checkbox" name="predmet" value="КЯР" id="КЯР"><label for="КЯР">КЯР</label>
+        <input type="checkbox" name="predmet" value="Математика" id="Мат"><label for="Мат">Математика</label>
+        </div>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+        <div><button onclick="pechat()" class="pech">Напечатать</button></div>
+    </form>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

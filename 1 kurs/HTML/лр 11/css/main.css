@@ -1,0 +1,80 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul {
+  list-style: none;
+}
+header li {
+  display: inline;
+  padding: 90px;
+}
+header a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.center_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.center_container main {
+  width: 60%;
+}
+.center_container .mainTextCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.center_container .mainTextCont div {
+  width: 220px;
+  height: 350px;
+}
+.center_container .mainTextCont .text1, .center_container .mainTextCont .text2 {
+  color: #9a2b00;
+  font-size: 16.6666666667px;
+}
+.center_container .mainPicCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.center_container .mainPicCont img {
+  margin: 5px;
+}
+.center_container .mainPicCont div {
+  height: 350px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 360px;
+}
+
+.input1:hover {
+  background-color: #230000;
+}
+
+.div_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(133, 133, 208);
+  font-size: 14px;
+  max-height: 100vh;
+  margin-top: 40px;
+}
+.div_container .footer_number, .div_container .footer_email {
+  text-decoration: none;
+  color: rgb(133, 133, 208);
+}

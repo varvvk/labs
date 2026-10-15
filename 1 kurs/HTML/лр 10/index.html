@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/burger.css">
+    <style>
+        @media screen and (max-width: 500px) {
+            .caption {
+            color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+          <h1>Flexbox-верстка</h1>
+    </div> 
+    <div class="container">
+        <div class="column video-column">
+            <h3>Видео</h3>
+            <video width="320" height="240" controls>
+              <source src="images/vid1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <video width="320" height="240" controls>
+              <source src="images/vid1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <video width="320" height="240" controls>
+              <source src="images/vid1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+          <div class="column">
+            <h3>Информация</h3>
+            <p>Flexbox-верстка - это метод CSS-верстки, который позволяет эффективно управлять расположением элементов внутри контейнера. Она обеспечивает простую и гибкую структуру размещения элементов на веб-странице.</p>
+          </div>
+          <div class="column audio-column">
+            <h3>Аудио</h3>
+            <audio controls>
+              <source src="images/aud1.mp3" type="audio/mp3">
+              Your browser does not support the audio tag.
+            </audio>
+            <audio controls>
+              <source src="images/aud1.mp3" type="audio/mp3">
+              Your browser does not support the audio tag.
+            </audio>
+            <audio controls>
+              <source src="images/aud1.mp3" type="audio/mp3">
+              Your browser does not support the audio tag.
+            </audio>
+        </div>
+    </div>
+    <div class="container2">
+          <input type="checkbox" id="burger-menu">
+          <label for="burger-menu">&#8801 Menu</label>
+          <div class="burger-menu">
+              <ul>
+                  <li><a href="#">Видео</a></li>
+                  <li><a href="#">Информация</a></li>
+                  <li><a href="#">Аудио</a></li>
+              </ul>
+          </div>
+    </div> 
+  <div class="gallery">
+    <div>
+       <img src="images/img1.jpg" alt="Photo 1">
+       <p class="caption">Надпись 1</p>
+    </div>
+    <div>
+       <img src="images/img1.jpg" alt="Photo 2">
+       <p class="caption">Надпись 2</p>
+    </div>
+    <div>
+        <img src="images/img1.jpg" alt="Photo 1">
+        <p class="caption">Надпись 3</p>
+    </div>
+    <div>
+        <img src="images/img1.jpg" alt="Photo 1">
+        <p class="caption">Надпись 4</p>
+    </div>
+    <div>
+        <img src="images/img1.jpg" alt="Photo 1">
+        <p class="caption">Надпись 5</p>
+    </div>
+    <div>
+        <img src="images/img1.jpg" alt="Photo 1">
+        <p class="caption">Надпись 6</p>
+    </div>
+    <div>
+        <img src="images/img1.jpg" alt="Photo 1">
+        <p class="caption">Надпись 7</p>
+    </div>
+    <div>
+        <img src="images/img1.jpg" alt="Photo 1">
+        <p class="caption">Надпись 8</p>
+    </div>
+ </div>
+</body>
+</html>

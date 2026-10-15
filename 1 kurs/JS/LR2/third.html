@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css3.css">
+</head>
+<body>
+    <script type="text/javascript">
+        let table = document.createElement('table');
+        let a = Number(prompt('Введите значение a:'));
+        let b = Number(prompt('Введите значение b:'));
+        tr = table.appendChild(document.createElement('tr'));
+        tr.appendChild(document.createElement('th')).innerHTML = "Радиус";
+        tr.appendChild(document.createElement('th')).innerHTML = "Площадь круга";
+        tr.appendChild(document.createElement('th')).innerHTML = "Длина окружности";
+        do 
+        {
+            var R = a;
+            var S = Math.PI * Math.pow(R, 2);
+            var C = 2 * Math.PI * R;
+            tr = table.appendChild(document.createElement('tr'));
+            tr.appendChild(document.createElement('td')).innerHTML = a.toFixed(1);
+            tr.appendChild(document.createElement('td')).innerHTML = Math.round(Math.PI * Math.pow(a, 2));
+            tr.appendChild(document.createElement('td')).innerHTML = Math.round(Math.PI * 2 * a);
+            a += 0.3;  
+        } while (a <= b);
+        document.body.append(table);
+    </script>
+</body>
+</html>

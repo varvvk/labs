@@ -1,0 +1,35 @@
+form {
+    background-color: indigo;
+    color: white;
+    font-size: 1.2em;
+    width: 500px;
+    margin: auto;
+}
+input[type="text"], input[type="email"] {
+    background-color: rgba(255,255,255,.5);
+    color: rgba(255,255,255,1);
+    box-shadow: inset 0 0 10px rgba(255,255,255, .75);
+    margin: 5px;
+    border-radius: 5px;
+}
+input[type="text"]:focus {
+    background-color: black;
+    color: black;
+}
+button {
+    color: white;
+    background-color: navy;
+    box-shadow:  0 0 4px white;
+    margin: 10px 5px 10px 5px;
+}
+label {
+display: inline-block;
+width: 20em;
+vertical-align: top;
+text-align: left;
+margin-right: -200px;
+margin-left: 10px;
+}
+div:last-child {
+margin-left: 150px;
+}

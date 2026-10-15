@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<holidayList>
+<head>
+    <hname>Название праздника</hname>
+    <hdate>Дата</hdate>
+</head>
+<row>
+    <name>Новый год</name>
+    <date>1 января</date>
+</row>
+<row>
+    <name>Рождество</name>
+    <date>7 января</date>
+</row>
+<row>
+    <name>День Победы</name>
+    <date>9 мая</date>
+</row>
+</holidayList>

@@ -1,0 +1,13 @@
+table {  
+    border: 5px inset rgb(148, 84, 0);
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+}
+td {
+    border: 1px solid black;
+    padding: 4px 4px 4px 4px;
+    text-align: center;
+    background-color: antiquewhite;
+    color: rgb(110, 77, 35);
+}

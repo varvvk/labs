@@ -1,0 +1,23 @@
+table{
+    border-spacing: 0cap;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+td {
+    border: solid 1px black;
+}
+th {
+    border: solid 1px black;
+    background-color: rgb(181, 181, 181);
+}
+.hide {
+    empty-cells: hide;
+}
+.first td:nth-child(even){background-color: white;}
+.first td:nth-child(odd){background-color: black;}
+.second td:nth-child(even){background-color: black;}
+.second td:nth-child(odd){background-color: white;}
+.horiz {height: 30px;}
+.first th:first-child {width: 30px;}
+.first th:last-child {width: 30px;}

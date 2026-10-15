@@ -1,0 +1,43 @@
+.nav li {
+    display: inline;
+}
+a {
+    display: inline-block;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    height: 30px;
+    margin: 15px;
+    text-align: center;
+}
+.spisok {
+    position: absolute;
+    display: none;
+}
+.spisok a {
+    display: block;
+}
+li:hover ul {
+    display: block;
+    width: 150px;
+    margin-left: 145px;
+    margin-top: -29px;
+}
+
+li a {
+    background-image: url('images/facultet.png');
+    background-repeat: no-repeat;
+}
+.it:hover {
+    background-position: 0 -30px;
+}
+.spisok a {
+    background-image: none;
+}
+.pim:hover {
+     background-position: 0 -90px;
+}
+.htit:hover {
+   background-position: 0 -60px;
+}

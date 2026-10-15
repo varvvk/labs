@@ -1,0 +1,10 @@
+.p1 {border-style: solid; border-color: orange darkblue yellow brown;}
+.p2 {border-style: none solid; border-color: #007BA7;}
+.p3 {border-style: solid dashed dashed dashed ; border-color: rgb(229 43 80) blue blue blue;}
+.p4 {border: 1px dotted orange;}
+.p5 {border-width: 2px; border-style: solid dashed; border-color: darkblue rgb(123, 8, 61);}
+.p6 {border: double #B3446C;}
+.p7 {border-top: 1px dashed #808000; border-bottom: 3px solid #FF7518;}
+.p8 {border-left: double #CC7722; border-bottom: double #CC7722;}
+.p9 {border-right: ridge #B5A642; border-top: ridge #B5A642;}
+.p10 {border-style: none dotted dotted dotted; border-width: 5px; border-color: rgb(0 40 0);}

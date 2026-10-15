@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rect:hover {
+            stroke-dashoffset: 0;
+        }
+        .rect{
+            stroke: darkblue;
+            stroke-width: 7px;
+            transition: all 1s ease-in-out;
+            stroke-dasharray: 720;
+            stroke-dashoffset: 720;
+        }
+        polygon:hover {
+            stroke: blue;
+            stroke-width: 4px;
+        }
+    </style>
+</head>
+<body>
+    <svg width="1200px" height="400px">
+        <defs>
+            <linearGradient id="Gradient"> 
+                <stop stop-color="green" offset="0%"/>
+                <stop stop-color="orange" offset="80%"/>
+            </linearGradient>
+        </defs>
+
+        <circle r="100px" cx="120px" cy="150px" fill="darkblue"/>
+        <rect class="rect" width="180" height="180" fill="red" x="270" y="60"/>
+        <ellipse id="ellips" rx="130" ry="90" cx="650" cy="150" fill="darkgreen"/>
+        <animate xlink:href="#ellips" attributeName="fill" from="green" to="yellow" dur="1s" begin="click" fill="freeze" />
+
+        <polygon points="900,60 800,240 1000,240" fill="url(#Gradient)"/>
+        <polyline points="20,270 520,270 450,320 1000,320" fill="none" stroke="darkviolet" stroke-width="3"/>
+    </svg>
+</body>
+</html>

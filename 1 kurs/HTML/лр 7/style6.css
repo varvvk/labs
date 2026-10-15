@@ -1,0 +1,131 @@
+@keyframes anim1{
+    0% {
+    left: 0;
+    top: 0;
+    border-radius: 0px;
+    }
+    
+    50% {
+    left: 200px;
+    top: 0px;
+    border-radius: 10px;
+    }
+    
+    100% {
+    left: 0;
+    top: 0px;
+    border-radius: 0px;
+    }
+}
+.one {
+    position: relative;
+    animation: anim1 4s linear infinite;
+}
+@keyframes anim2 {
+    0% {
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    }
+    50% {
+    left: 200px;
+    top: 0;
+    border-radius: 50%;
+    }
+    100% {
+    left: 0;
+    top: 0px;
+    border-radius: 0;
+    }
+}   
+.two {
+    display: inline-block;
+    position: relative;
+    animation: anim2 4s linear infinite;
+}
+@keyframes anim3 {
+    0% {
+    left: 0;
+    top: 0;
+    opacity: 1;
+    }
+    
+    50% {
+    left: 200px;
+    top: 0px;
+    opacity: 0;
+    }
+    
+    100% {
+    left: 0;
+    top: 0;
+    opacity: 1;
+    }
+}
+.three {
+    position: relative;
+    animation: anim3 4s linear infinite;
+}
+@keyframes anim4 {
+    0% {
+    left: 100px;
+    top: 0px;
+    }
+    50% {
+    left: 100px;
+    top: 50px;
+    }
+    100% {
+    left: 100px;
+    top: 0px;
+    }
+}   
+.four {
+    position: relative;
+    animation: anim4 4s linear infinite;   
+}
+@keyframes anim5 {
+    0% {
+    left: 100px;
+    top: 0;
+    }
+    
+    25% {
+    left: 250px;
+    top: 0px;
+    }
+    
+    50% {
+    left: 250px;
+    top: 150px;
+    }
+    
+    75% {
+    left: 100px;
+    top: 150px;
+    }
+    
+    100% {
+    left: 100px;
+    top: 0;
+    }
+}
+.five {
+    position: relative;
+    animation: anim5 4s linear infinite; 
+}
+h1 {
+    text-align: center;
+    animation: h1 4s linear infinite reverse;
+}
+@keyframes h1 {
+    0% {
+    opacity: 0;
+    }
+    50% {
+    opacity: 0.8;
+    }
+    100% {
+    opacity: 0;
+    }
+}

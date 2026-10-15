@@ -1,0 +1,48 @@
+div {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+}
+.r {
+    border: 7px outset rgb(255, 0, 0);
+}
+.g {
+    border: 7px dashed rgb(0, 128, 0);
+}
+.b {
+    border: 7px dotted rgb(0, 0, 139);
+}
+.c{
+    border: 7px double rgb(173, 216, 230);
+}
+.m {
+    border: 7px groove rgb(128, 0, 128);
+}
+.y {
+    border: 7px inset rgb(255, 255, 0);
+}
+.k {
+    border: 7px solid rgb(0, 0, 0);
+}
+span {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background-color: #FFA500;
+    border: solid #FF4500;
+}
+.cl1 {
+    margin-top: 40px;
+    width: 400px;
+    text-align: center;
+    border: solid  #FF7F50;
+}
+.cl2 {
+    border: 5px solid rgb(195, 10, 10);
+    border-radius: 20px/40px;
+    box-shadow: inset 2px 2px 8px 8px rgba(0,0,0,.5);
+    overflow: auto;
+}
+.cl3 {
+    border: solid #FF6347;
+}
