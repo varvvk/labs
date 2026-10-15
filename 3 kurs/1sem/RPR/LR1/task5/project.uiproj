@@ -1,0 +1,6 @@
+{
+  "Name": "task5",
+  "ProjectType": "Process",
+  "Description": "Пустой процесс",
+  "MainFile": "Main.xaml"
+}
