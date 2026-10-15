@@ -1,0 +1,8 @@
+﻿  Lab-06d.cpp
+C:\labs\OS\Lab-06d\Lab-06d\Lab-06d.cpp(124,11): warning C4566: символ, представленный универсальным именем символа "\u2192", невозможно представить в текущей кодовой странице (1251)
+  Создание кода
+  1 of 4 functions (25.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  Lab-06d.vcxproj -> C:\labs\OS\Lab-06d\x64\Release\Lab-06d.exe

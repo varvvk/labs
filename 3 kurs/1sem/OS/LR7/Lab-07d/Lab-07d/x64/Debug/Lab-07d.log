@@ -1,0 +1,17 @@
+﻿  Lab-07d.cpp
+C:\labs\OS\Lab-07d\Lab-07d\Lab-07d.cpp(19,10): error C2664: "BOOL CreateProcessW(LPCWSTR,LPWSTR,LPSECURITY_ATTRIBUTES,LPSECURITY_ATTRIBUTES,BOOL,DWORD,LPVOID,LPCWSTR,LPSTARTUPINFOW,LPPROCESS_INFORMATION)": невозможно преобразовать аргумент 1 из "const char [12]" в "LPCWSTR"
+      C:\labs\OS\Lab-07d\Lab-07d\Lab-07d.cpp(20,9):
+      Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\processthreadsapi.h(386,1):
+       см. объявление "CreateProcessW"
+      C:\labs\OS\Lab-07d\Lab-07d\Lab-07d.cpp(19,10):
+      при попытке сопоставить список аргументов "(const char [12], const char [12], int, int, int, int, int, int, STARTUPINFO *, PROCESS_INFORMATION *)"
+  
+C:\labs\OS\Lab-07d\Lab-07d\Lab-07d.cpp(28,10): error C2664: "BOOL CreateProcessW(LPCWSTR,LPWSTR,LPSECURITY_ATTRIBUTES,LPSECURITY_ATTRIBUTES,BOOL,DWORD,LPVOID,LPCWSTR,LPSTARTUPINFOW,LPPROCESS_INFORMATION)": невозможно преобразовать аргумент 1 из "const char [12]" в "LPCWSTR"
+      C:\labs\OS\Lab-07d\Lab-07d\Lab-07d.cpp(29,9):
+      Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\processthreadsapi.h(386,1):
+       см. объявление "CreateProcessW"
+      C:\labs\OS\Lab-07d\Lab-07d\Lab-07d.cpp(28,10):
+      при попытке сопоставить список аргументов "(const char [12], const char [13], int, int, int, int, int, int, STARTUPINFO *, PROCESS_INFORMATION *)"
+  
