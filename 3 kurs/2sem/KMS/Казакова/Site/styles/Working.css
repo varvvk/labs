@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    width: 90%;
+    margin: 0 auto;
+    background: #f5f5f5;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Меню */
+.menu {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.content h1 {
+    position: sticky;
+    top: 50px;
+    background: #f5f5f5;
+    z-index: 999;
+    margin: 0 0 20px 0;
+    padding: 10px 0;
+    font-size: 2em;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-description {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-description p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.video-description ol {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.video-description li {
+    margin-bottom: 8px;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+        padding: 10px;
+        border-bottom: 1px solid #555;
+    }
+    
+    .video-container {
+        margin: 0 -20px 20px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+}

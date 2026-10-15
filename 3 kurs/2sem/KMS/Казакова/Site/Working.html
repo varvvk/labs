@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Принцип работы</title>
+    <link rel="stylesheet" href="styles/Working.css">
+</head>
+<body>
+    <div class="menu">
+        <button class="burger">☰</button>
+        <div class="nav-links">
+            <a href="Title.html">Титул</a>
+            <a href="Theory.html">Теория</a>
+            <a href="Description.html">Описание</a>
+            <a href="Working.html">Принцип работы</a>
+            <a href="Simulator.html">Симулятор</a>
+            <a href="Dialog.html">Диалог</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Принцип работы кассового аппарата</h1>
+        
+        <div class="video-container">
+            <video controls width="100%">
+                <source src="video/cash_register_working.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео. 
+                <a href="video/cash_register_working.mp4">Скачать видео</a>
+            </video>
+        </div>
+        
+        <div class="video-description">
+            <p>На видео показан принцип работы кассового аппарата:</p>
+            <ol>
+                <li>Сканирование товара по штрих-коду</li>
+                <li>Отображение стоимости покупки на мониторе</li>
+                <li>Выбор способа оплаты (наличные или карта)</li>
+                <li>Печать чека</li>
+                <li>Открытие денежного ящика</li>
+                <li>Запись данных о продаже</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.burger').onclick = function() {
+            document.querySelector('.nav-links').classList.toggle('show');
+        }
+
+        document.querySelectorAll('.parts-list li').forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.getAttribute('data-img');
+                document.getElementById('part-image').src = imgSrc;
+            });
+        });
+    </script>
+</body>
+</html>

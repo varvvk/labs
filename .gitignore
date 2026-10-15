@@ -70,3 +70,29 @@ desktop.ini
 *.app
 
 *.zip
+
+**/build/
+**/Build/
+**/Builds/
+
+# Unity исключения
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Bb]uild/
+**/[Bb]uilds/
+**/[Ll]ogs/
+**/*_Data/
+**/MonoBleedingEdge/
+
+# Unity и WebGL
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+*.wasm
+*.data
+*.unityweb

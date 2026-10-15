@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Dialog</title>
+    <link rel="stylesheet" href="styles/Dialog.css">
+    <script src="jquery.js"></script>
+    <script src="https://webasr.yandex.net/jsapi/v1/webspeechkit.js"></script>
+    <script src="dialog.js"></script>
+</head>
+<body onload="dialog_window()">
+
+<div class="menu">
+    <button class="burger">☰</button>
+    <div class="nav-links">
+        <a href="Title.html">Титул</a>
+        <a href="Theory.html">Теория</a>
+        <a href="Description.html">Описание</a>
+        <a href="Working.html">Принцип работы</a>
+        <a href="Simulator.html">Симулятор</a>
+        <a href="Dialog.html">Диалог</a>
+    </div>
+</div>
+
+<div class="content">
+    <h1>База знаний для диалога</h1>
+    
+    <p>База знаний – это формализованное представление текста в виде <strong>семантической сети</strong>, где ключевые понятия связаны смысловыми отношениями.</p>
+    
+    <h2>Основные принципы</h2>
+    
+    <h3>1. Триады</h3>
+    <p>Текст разбивается на триады: <strong>ПОДЛЕЖАЩЕЕ – СКАЗУЕМОЕ – ДОПОЛНИТЕЛЬНЫЕ ЧЛЕНЫ</strong></p>
+    <ul>
+        <li><strong>Субъект</strong> – тот, кто производит действие</li>
+        <li><strong>Объект</strong> – тот, на кого направлено действие</li>
+        <li><strong>Сказуемое</strong> – связующее действие между ними</li>
+    </ul>
+    
+    <h3>2. Структура базы знаний</h3>
+    <pre>var knowledge = [
+    ["кассовый аппарат", "является", "устройством учета продаж"],
+    ["кассовый аппарат", "выглядит", "на рисунок: &lt;img&gt;"]
+];</pre>
+    
+    <h3>3. Поиск ответа</h3>
+    <p>Алгоритм находит ответ по двойному отбору:</p>
+    <ol>
+        <li>Совпадение <strong>сказуемого</strong> в вопросе с триадой</li>
+        <li>Совпадение <strong>подлежащего</strong> с триадой</li>
+    </ol>
+    
+    <h2>Примеры вопросов</h2>
+    <ul>
+        <li>«что такое кассовый аппарат»</li>
+        <li>«кассовый аппарат изобрел кто»</li>
+        <li>«как работает кассовый аппарат»</li>
+        <li>«покажи кассовый аппарат»</li>
+    </ul>
+</div>
+
+</body>
+</html>

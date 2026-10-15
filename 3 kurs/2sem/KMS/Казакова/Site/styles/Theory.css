@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    width: 90%;
+    margin: 0 auto;
+    background: #f5f5f5;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Меню */
+.menu {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Контент */
+.content {
+    margin-top: 20px;
+}
+
+.content h1 {
+    position: sticky;
+    top: 50px; /* высота меню (подгони под свою) */
+    background: #f5f5f5;
+    z-index: 999;
+    margin: 0;
+    padding: 10px 0;
+}
+
+h1, h2, p, ol, ul {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 30px 0 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+ol, ul {
+    text-align: justify;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+        padding: 10px;
+        border-bottom: 1px solid #555;
+    }
+}
