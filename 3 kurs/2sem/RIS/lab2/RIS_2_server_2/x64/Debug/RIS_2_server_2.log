@@ -1,0 +1,5 @@
+﻿  server2.cpp
+C:\labs\RIS\lab2\RIS_2_server_2\server2.cpp(66,45): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\labs\RIS\lab2\RIS_2_server_2\server2.cpp(77,45): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\labs\RIS\lab2\RIS_2_server_2\server2.cpp(107,45): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  RIS_2_server_2.vcxproj -> C:\labs\RIS\lab2\RIS_2_server\x64\Debug\RIS_2_server_2.exe
