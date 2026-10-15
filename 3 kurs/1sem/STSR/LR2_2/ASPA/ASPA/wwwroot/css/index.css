@@ -1,0 +1,20 @@
+﻿
+.red {
+    color: #e74c3c; /* красный */
+    font-weight: bold;
+}
+
+.green {
+    color: #27ae60; /* зеленый */
+    font-weight: bold;
+}
+
+.magenta {
+    color: #8e44ad; /* пурпурный */
+    font-weight: bold;
+}
+
+.blue {
+    color: #2980b9; /* синий */
+    font-weight: bold;
+}

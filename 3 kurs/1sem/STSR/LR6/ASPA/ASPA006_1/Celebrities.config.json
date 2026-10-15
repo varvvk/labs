@@ -1,0 +1,6 @@
+{
+  "Celebrities": {
+    "PhotosFolder": "C:\\labs\\STSR\\LR6\\ASPA\\ASPA006_1\\Photos",
+    "ConnectionString": "Data Source=DESKTOP-N1LCBCD; Initial Catalog=LESO1; Integrated Security=True; TrustServerCertificate=True;"
+  }
+}

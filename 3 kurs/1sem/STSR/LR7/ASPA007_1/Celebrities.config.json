@@ -1,0 +1,6 @@
+﻿{
+  "Celebrities": {
+    "PhotosFolder": "C:\\labs\\STSR\\Bel4our TPVI-4sem main 7-ASPA\\ASPA007_1\\wwwroot\\photo",
+    "ConnectionString": "Server=DESKTOP-N1LCBCD; Database=LESO1; Trusted_Connection=true; TrustServerCertificate=Yes"
+  }
+}
