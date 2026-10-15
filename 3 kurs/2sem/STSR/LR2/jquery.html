@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p>
+        ФИО:
+    </p>
+    <div id="result"></div>
+
+<script>
+    $(document).ready(function() {
+        $.ajax({
+            url: '/api/name',
+            method: 'GET',
+            success: function(data) {
+                $('#result').text(data);
+            },
+            error: function() {
+                $('#result').text('Ошибка при получении данных');
+            }
+        });
+    });
+</script>
+</body>
+</html>

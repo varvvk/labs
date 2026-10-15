@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Pulpits API</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        input, button { margin: 5px; }
+        pre { background: #f4f4f4; padding: 10px; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+
+<h2>Pulpits API</h2>
+
+<!-- GET -->
+<button onclick="getPulpits()">GET pulpits</button>
+
+<!-- POST -->
+<h3>POST</h3>
+<input id="post_pulpit" placeholder="PULPIT">
+<input id="post_name" placeholder="PULPIT_NAME">
+<input id="post_faculty" placeholder="FACULTY">
+<button onclick="postPulpit()">Add</button>
+
+<!-- PUT -->
+<h3>PUT</h3>
+<input id="put_pulpit" placeholder="PULPIT">
+<input id="put_name" placeholder="PULPIT_NAME">
+<input id="put_faculty" placeholder="FACULTY">
+<button onclick="putPulpit()">Update</button>
+
+<!-- DELETE -->
+<h3>DELETE</h3>
+<input id="delete_id" placeholder="PULPIT">
+<button onclick="deletePulpit()">Delete</button>
+
+<h3>Response:</h3>
+<pre id="result"></pre>
+
+<script>
+const result = document.getElementById('result');
+
+function show(data, isError = false) {
+    result.className = isError ? 'error' : '';
+    result.textContent = JSON.stringify(data, null, 2);
+}
+
+// ===== GET =====
+async function getPulpits() {
+    try {
+        const res = await fetch('/api/pulpits');
+        const data = await res.json();
+
+        if (!res.ok) throw data;
+        show(data);
+
+    } catch (err) {
+        show(err, true);
+    }
+}
+
+// ===== POST =====
+async function postPulpit() {
+    try {
+        const body = {
+            PULPIT: document.getElementById('post_pulpit').value,
+            PULPIT_NAME: document.getElementById('post_name').value,
+            FACULTY: document.getElementById('post_faculty').value
+        };
+
+        const res = await fetch('/api/pulpits', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body)
+        });
+
+        const data = await res.json();
+        if (!res.ok) throw data;
+
+        show(data);
+
+    } catch (err) {
+        show(err, true);
+    }
+}
+
+// ===== PUT =====
+async function putPulpit() {
+    try {
+        const body = {
+            PULPIT: document.getElementById('put_pulpit').value,
+            PULPIT_NAME: document.getElementById('put_name').value,
+            FACULTY: document.getElementById('put_faculty').value
+        };
+
+        const res = await fetch('/api/pulpits', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body)
+        });
+
+        const data = await res.json();
+        if (!res.ok) throw data;
+
+        show(data);
+
+    } catch (err) {
+        show(err, true);
+    }
+}
+
+// ===== DELETE =====
+async function deletePulpit() {
+    try {
+        const id = document.getElementById('delete_id').value;
+
+        const res = await fetch(`/api/pulpits/${id}`, {
+            method: 'DELETE'
+        });
+
+        const data = await res.json();
+        if (!res.ok) throw data;
+
+        show(data);
+
+    } catch (err) {
+        show(err, true);
+    }
+}
+</script>
+
+</body>
+</html>

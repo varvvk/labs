@@ -1,0 +1,158 @@
+все факультеты
+{
+  getFaculties {
+    FACULTY
+    FACULTY_NAME
+  }
+}
+
+конкретный факультет
+{
+  getFaculties(faculty: "ИТ") {
+    FACULTY
+    FACULTY_NAME
+  }
+}
+
+мутация добавить обновить факультет
+mutation {
+  setFaculty(faculty: "Т", faculty_name: "Тестовый факультет") {
+    FACULTY
+    FACULTY_NAME
+  }
+}
+
+удалить факультет
+mutation {
+  delFaculty(faculty: "Т")
+}
+
+преподы факультета
+{
+  getTeachersByFaculty(faculty: "ИТ") {
+    FACULTY
+    TEACHERS {
+      TEACHER
+      TEACHER_NAME
+    }
+  }
+}
+
+дисциплины факультета
+{
+  getSubjectsByFaculties(faculty: "ИТ") {
+    PULPIT
+    PULPIT_NAME
+    FACULTY
+    SUBJECTS {
+      SUBJECT
+      SUBJECT_NAME
+    }
+  }
+}
+
+
+
+
+
+все преподы
+{
+  getTeachers {
+    TEACHER
+    TEACHER_NAME
+    PULPIT
+  }
+}
+
+конкретный препод
+{
+  getTeachers(teacher: "СМЛВ") {
+    TEACHER
+    TEACHER_NAME
+    PULPIT
+  }
+}
+
+
+все кафедры
+{
+  getPulpits {
+    PULPIT
+    PULPIT_NAME
+    FACULTY
+  }
+}
+
+конкретная кафедра
+{
+  getPulpits(pulpit: "ИСиТ") {
+    PULPIT
+    PULPIT_NAME
+    FACULTY
+  }
+}
+
+все дисциплины
+{
+  getSubjects {
+    SUBJECT
+    SUBJECT_NAME
+    PULPIT
+  }
+}
+
+конкретная дисциплина
+{
+  getSubjects(subject: "БД") {
+    SUBJECT
+    SUBJECT_NAME
+    PULPIT
+  }
+}
+
+
+
+добавить обновить кафедру
+mutation {
+  setPulpit(pulpit: "ТК", pulpit_name: "Тестовая кафедра", faculty: "ИТ") {
+    PULPIT
+    PULPIT_NAME
+    FACULTY
+  }
+}
+
+удалить кафедру
+mutation {
+  delPulpit(pulpit: "ТЕСТ_КАФ")
+}
+
+добавить препода
+mutation {
+  setTeacher(teacher: "ПРЕП", teacher_name: "Новый преподаватель", pulpit: "ИСиТ") {
+    TEACHER
+    TEACHER_NAME
+    PULPIT
+  }
+}
+
+удалить препода
+mutation {
+  delTeacher(teacher: "ПРЕП")
+}
+
+новая дисциплина
+mutation {
+  setSubject(subject: "ДИСЦ", subject_name: "Новая дисциплина", pulpit: "ИСиТ") {
+    SUBJECT
+    SUBJECT_NAME
+    PULPIT
+  }
+}
+
+удалить дисциплину
+mutation {
+  delSubject(subject: "ДИСЦ")
+}
+
+
+
