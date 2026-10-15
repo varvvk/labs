@@ -1,0 +1,38 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+#nullable enable
+
+namespace LR6.Lab6Lib
+{
+    public class Publisher
+    {
+        private delegate void SubscriberUpdate(string eventname);
+        private event SubscriberUpdate? _update;
+        private string _eventname;
+
+        public Publisher(string eventname)
+        {
+            _eventname = eventname;
+        }
+
+        public void subscribe(ISubscriber subscriber)
+        {
+            _update += subscriber.update;
+        }
+
+        public bool unsubscribe(ISubscriber subscriber)
+        {
+            _update -= subscriber.update;
+            return true;
+        }
+
+        public int notify()
+        {
+            _update?.Invoke(_eventname);
+            return _update?.GetInvocationList()?.Length ?? 0;
+        }
+    }
+}

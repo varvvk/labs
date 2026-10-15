@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="MainWindowBackgroundBrush" Color="#FFF0F5"/>
+    <SolidColorBrush x:Key="TopPanelBackgroundBrush" Color="#6b013a"/>
+    <Style x:Key="ButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="Pink"/>
+    </Style>
+
+    <SolidColorBrush x:Key="CategoryItemBackgroundBrush" Color="Pink"/>
+    <SolidColorBrush x:Key="CategoryItemMouseOverBrush" Color="#f7b3d1"/>
+    <SolidColorBrush x:Key="CategoryItemSelectedBrush" Color="#e16ea5"/>
+
+    <SolidColorBrush x:Key="CategoryItemText" Color="Black"/>
+
+    <SolidColorBrush x:Key="ThemeButtonColor" Color="#7eafde"/>
+    <SolidColorBrush x:Key="ThemeButtonTextColor" Color="White"/>
+</ResourceDictionary>
